@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from 'react';
-import calculateWinner from "./test";
+import calculateWinner from "./winnerClac";
 
 function Square(prop) {
   return (
