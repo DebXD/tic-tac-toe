@@ -19,7 +19,9 @@ export default function Board() {
     console.log("button pressed");
     // check if the square is filled or winner has been selected
     if (squares[index] || calculateWinner(squares)) {
+      console.log("winner decleared");
       return;
+      
     }
 
     // create a exact copy of squared in nextSquares

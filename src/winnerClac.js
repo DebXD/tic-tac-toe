@@ -11,9 +11,13 @@ function calculateWinner(squares) {
     ];
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
-      console.log(c)
-      // if ('x' && 'x' == 'x') same login applies below 
-      if (squares[0] && squares[0] === squares[1] && squares[0] === squares[2]) {
+      console.log(squares[a], squares[b], squares[c]);
+      // if ('x' && 'x' == 'x') same logic applies below
+      if (
+        squares[a] &&
+        squares[a] === squares[b] &&
+        squares[a] === squares[c]
+      ) {
         return squares[a];
       }
     }
